@@ -1,0 +1,65 @@
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap/scss/bootstrap";
+
+
+.hom-ind-par1{
+background-color: aquamarine;
+color:darkblue;
+}
+.hom-ind-par2{
+    background-color: beige;
+}
+.hom-ind-con1{
+	margin-top: 10em;
+	-webkit-box-shadow: 0px 0px 21px -7px rgba(0,0,0,0.54);
+	-moz-box-shadow: 0px 0px 21px -7px rgba(0,0,0,0.54);
+	box-shadow: 0px 0px 21px -7px rgba(0,0,0,0.54);
+
+}
+.dev-sha-ses1{
+	margin: 5em 39% 5em 30%;
+	text-align: center;
+}
+.dev-sha-reg1{
+	margin: 5em 39% 5em 30%;
+	text-align: center;	
+}
+.actions{
+	transform: translateX(20px) translateY(
+10px);
+}
+.cli-ind-mai1{
+	height: 94vh;
+	background-color: black;
+	color: white;
+}
+.cli-ind-mai1 h1{
+	font-size: 15em;
+	padding-top: 35vh;
+	margin-left: 29%;
+}
+.emp-ind-mai1{
+	height: 94vh;
+	background-color: white;
+	color: black;
+}
+.emp-ind-mai1 h1{
+	font-size: 15em;
+	padding-top: 35vh;
+	margin-left: 17%;
+}
