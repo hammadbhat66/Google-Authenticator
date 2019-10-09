@@ -2,7 +2,6 @@ class HomeController < ApplicationController
   helper_method :resource_name, :resource, :devise_mapping, :resource_class
   prepend_before_action :usersignin
   def index
-    @otp_required
   end
   def resource_name
     :user
