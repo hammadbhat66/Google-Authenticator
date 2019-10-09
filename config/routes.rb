@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'home#index'
   devise_for :users, controllers: {sessions: 'sessions'}
   get 'employees/index'
-  get 'otp_required',to:"home#check_otp_required"
+  post 'otp_required',to:"home#check_otp_required"
   get 'clients/index'
   get    '/two_factor' => 'two_factors#show', as: 'admin_two_factor'
   post   '/two_factor' => 'two_factors#create'
