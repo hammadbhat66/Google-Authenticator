@@ -2,11 +2,13 @@
 <h2>Log In</h2>
 <%= form_for(:user, :url => session_path(:user)) do |f| %>
   <div><%= f.label :Email %></div>
-  <div><%= f.text_field :email %></div>
+  <div><%= f.text_field :email,id:"user-email" %></div>
   <div><%=f.label :Password%></div>
-  <div><%= f.password_field :password %></div>
+  <div><%= f.password_field :password,id:"user-password" %></div>
+  <div class="otp-attempt">    
       <%= f.label :otp_attempt %><br />
-    <%= f.text_field :otp_attempt, autocomplete: "off" %>
+      <%= f.text_field :otp_attempt, autocomplete: "off" %>
+  </div>    
   <div><%= f.check_box :remember_me %>
   <%= f.label :remember_me %></div>
   <div><%= f.submit 'Sign in' %></div>

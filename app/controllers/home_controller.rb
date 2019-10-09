@@ -19,6 +19,16 @@ class HomeController < ApplicationController
     @devise_mapping ||= Devise.mappings[:user]
   end
   
+  def check_otp_required
+    User.all.each do |user|
+      if user.email == params[:email]
+        if user.otp_required_for_login
+          @otp_required = true
+        end
+      end
+    end 
+  end
+
   def usersignin
     if user_signed_in?
           if current_user.role.user_type == "Admin"
@@ -30,4 +40,5 @@ class HomeController < ApplicationController
       end
     end
   end
+
 end

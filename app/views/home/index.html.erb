@@ -8,3 +8,13 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$("#user-email").keyup(function(){
+		var email_val = $("#user-email").val();
+		$.post("http://localhost:3000/otp_required",
+			{
+				email: email_val
+			}
+			);
+	});
+</script>
