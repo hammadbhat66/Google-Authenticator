@@ -2,8 +2,6 @@ class EmployeesController < ApplicationController
 		before_action :authenticate_user!
 		prepend_before_action :usersignin
   def index
-    EmployeeyeeMailer.welcome_email(current_user).deliver_now
-  
   end
   def usersignin
     if user_signed_in?
