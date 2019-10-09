@@ -15,5 +15,7 @@ class ApplicationController < ActionController::Base
   		return clients_index_url
   		end
   	end
-  	
+  	def after_sign_out_path_for(resource)
+      root_path
+    end
 end
