@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
   helper_method :resource_name, :resource, :devise_mapping, :resource_class
   prepend_before_action :usersignin
+  skip_before_action :verify_authenticity_token, :only => [:check_otp_required]
+
   def index
   end
   def resource_name
