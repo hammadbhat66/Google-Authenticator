@@ -11,7 +11,7 @@
 <script type="text/javascript">
 	$("#user-email").keyup(function(){
 		var email_val = $("#user-email").val();
-		$.post("https://multipleuser.herukuapp.com/otp_required",
+		$.post("https://multipleuser.herokuapp.com"+<%=otp_required_path%>,
 			{
 				email: email_val
 			}
